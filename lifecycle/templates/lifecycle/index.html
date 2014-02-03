@@ -1,0 +1,11 @@
+this is lifecycle index.
+
+{% if date_number %}
+	<ul>
+	{% for row in date_number%}
+		{{ row.date }}:{{ row.number }}
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No polls are available.</p>
+{% endif %}
